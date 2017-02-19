@@ -14,11 +14,11 @@ namespace Learn_project_algorithms
             int n;
 
             n = arr.Length;
-            Console.WriteLine("Original Array Elements :");
-            show_array_elements(arr);
+            Console.WriteLine("Elementos Originais do array :");
+            exibe_elementos_array(arr);
             shellSort(arr, n);
-            Console.WriteLine("\nSorted Array Elements :");
-            show_array_elements(arr);
+            Console.WriteLine("\nElementos ordenados :");
+            exibe_elementos_array(arr);
             Console.ReadKey();
         }
 
@@ -48,7 +48,7 @@ namespace Learn_project_algorithms
             }
         }
 
-        public void show_array_elements(int[] arr)
+        public void exibe_elementos_array(int[] arr)
         {
             foreach (var element in arr)
             {

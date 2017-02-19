@@ -7,19 +7,14 @@
  * aplique o método à instância menor,
  * volte à instância original.
  * A aplicação desse método produz um algoritmo recursivo.*/
-
-
+ 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Learn_project_algorithms
 {
     class MergeSort
     {
-        static public void DoMerge(int [] numbers, int left, int mid, int right)
+        static public void RealizaMerge(int [] numbers, int left, int mid, int right)
         {
             int [] temp = new int[25];
             int i, left_end, num_elements, tmp_pos;
@@ -59,7 +54,7 @@ namespace Learn_project_algorithms
             MergeSort_Recursive(numbers, left, mid);
             MergeSort_Recursive(numbers, (mid + 1), right);
         
-            DoMerge(numbers, left, (mid+1), right);
+            RealizaMerge(numbers, left, (mid+1), right);
           }
         }        
  
